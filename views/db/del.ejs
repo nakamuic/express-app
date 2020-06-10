@@ -1,0 +1,16 @@
+<%- include('../header') %>
+
+<p class="h5">ID = <%- data.id %>.</p>
+<form method="post" action="/db/del">
+    <input type="hidden" name="id" value="<%= data.id %>">
+    <ul class="form-group mb-3">
+        <li class="list-group-item">Name: "<%= data.name %>"</li>
+        <li class="list-group-item">Mail: "<%= data.mail %>"</li>
+    </ul>
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary">
+    </div>
+</form>
+
+<%- include('../footer') %>
